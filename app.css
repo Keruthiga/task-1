@@ -1,0 +1,180 @@
+* {
+    text-transform: capitalize;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.container {
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+    color: #f2cb05f0;
+}
+
+.nav-lists {
+    background-color: #f2cb05f0;
+    list-style-type: none;
+    padding: 20px;
+    display: flex;
+    justify-content: flex-end; 
+    align-items: center; /* Center items vertically */
+}
+
+li {
+    padding-right: 20px;
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+}
+
+.heading {
+    margin: 5px;
+    text-transform: uppercase;
+}
+
+.about {
+    text-align: center;
+}
+
+.overview {
+    text-align: center;
+    background-color: #f2cb05f0;
+    color: #000;
+    padding: 5px 20px; /* Adjusted padding for better responsiveness */
+}
+
+span {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+p {
+    padding: 20px;
+}
+
+.pic-1 {
+    max-width: 100%; 
+    height: auto;
+    transition: transform 0.3s ease-in-out;
+}
+
+.pic-1:hover {
+    transform: scale(1.1); 
+}
+.timeline-tl {
+    text-align: justify;
+    padding: 20px;
+}
+
+li {
+    list-style-type: disc;
+}
+
+table {
+    margin: 10px auto;
+    width: 100%; 
+    overflow-x: auto; 
+}
+
+th,
+td {
+    border: 1px solid #000;
+    color: #000;
+    padding: 10px 20px;
+}
+
+.awards {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.award-img {
+    max-width: 100%; 
+    height: auto;
+    padding-bottom: 8px;
+    transition: transform 0.3s ease-in; 
+}
+
+.award-text {
+    display: inline-block;
+    align-items: center;
+    text-align: justify;
+}
+
+.per-life {
+    display: flex;
+    flex-direction: row; 
+    align-items: center;
+}
+
+.per-text {
+    display: inline-block;
+    align-items: center;
+    text-align: justify;
+}
+
+.per-img {
+    max-width: 50%; 
+    height: 300px;
+    transition: transform 0.3s ease-in; 
+}
+
+.award-img:hover,
+.per-img:hover {
+    transform: scale(1.1); 
+}
+
+.links {
+    color: #f2cb05f0;
+    text-decoration: underline;
+}
+
+/* Media queries for responsiveness */
+@media screen and (max-width: 768px) {
+    .nav-lists {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .logo {
+        padding-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .nav-lists li {
+        padding: 10px 0;
+    }
+
+    .overview {
+        padding: 5px 10px;
+    }
+
+    .timeline-tl {
+        padding: 20px 10px;
+    }
+
+    table {
+        font-size: 14px;
+        max-width: 50%;
+    }
+
+    .awards,
+    .per-life {
+        text-align: center;
+        flex-direction: column;
+    }
+
+    .awards .award-img,
+    .per-life .per-img {
+        margin-bottom: 10px;
+    }
+}
